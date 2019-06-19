@@ -27,14 +27,27 @@ html{
 .text, .fas{
     display: inline-block;
 }
+.second{
+    display: none;
+}
 .fas{
     float: right;
     color: red;
     padding-top: 50px;
 }
-/* When Ready change CSS to this */
+.confirm{
+    display: none;
+}
+/* When Ready change CSS to change check to green */
 .fas-ready{
     float: right;
     color: rgb(39, 216, 8);
     padding-top: 50px;
+}
+/* When confirmed of just do it all in JS*/
+.show{
+    display: block;
+}
+.hide{
+    display: none;
 }
