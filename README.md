@@ -5,6 +5,13 @@
 1. Create python server that opens a websocket and listens and responds to messages as described below.
 2. Update app/facekey.js with correct server ip and port
 
+## Web app
+
+The web app seems to run fine without a web server (i.e. just open the file in Chrome). If you have node installed you can run a simple web server by doing this:
+
+1. `npm install` or `yarn` (if you have it)
+2. `npm run start` or `yarn start`
+
 ## Websocket communications
 
 Here is the flow for the websocket communications:
