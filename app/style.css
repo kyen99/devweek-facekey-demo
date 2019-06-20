@@ -34,16 +34,27 @@ html {
 .fas {
   float: right;
   color: red;
-  padding-top: 50px;
+  box-shadow: 0px 0px 15px red;
+  border-radius: 50%;
+  border: 0px solid red;
+  position: relative;
+  top: 30px;
+  background-color: black;
 }
 .confirm {
   display: none;
 }
 /* When Ready change CSS to change check to green */
+
 .fas-ready {
   float: right;
   color: rgb(39, 216, 8);
-  padding-top: 50px;
+  box-shadow: 0px 0px 15px rgb(29, 247, 33);
+  border-radius: 50%;
+  border: 1px solid rgb(29, 247, 33);
+  position: relative;
+  top: 30px;
+  background-color: white;
 }
 /* When confirmed of just do it all in JS*/
 .show {
@@ -55,8 +66,27 @@ html {
 }
 
 button {
-  width: 150px;
-  height: 50px;
-  font-size: 16px;
+  width: 200px;
+  height: 70px;
+  font-size: 22px;
   text-transform: uppercase;
+  border-radius: 5px;
+  margin-left: 200px;
+  color: white;
+  background-color: rgba(10, 112, 155, .5);
+  box-shadow: 0px 3px 5px white;
+  font-family: 'Dosis', sans-serif;
+}
+button:hover {
+  width: 200px;
+  height: 70px;
+  font-size: 22px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-left: 200px;
+  color: white;
+  background-color: rgb(10, 112, 155);
+  box-shadow: 0px 5px 10px white;
+  font-weight: bold;
+  font-family: 'Dosis', sans-serif;
 }
