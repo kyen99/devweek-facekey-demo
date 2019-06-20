@@ -1,16 +1,22 @@
-import asyncio
-import websockets
+# import asyncio
+# import websockets
+import requests
 
-async def hello(websocket, path):
-    name = await websocket.recv()
-    print(f"< {name}")
+key = input("EnterYubico Key:")
+headers = {"key": str(key)}
+r = requests.post("https://demo.yubico.com/api/v1/simple/otp/validate", headers = headers)
+print(r.json())
 
-    greeting = f"Hello {name}!"
+# async def hello(websocket, path):
+#     name = await websocket.recv()
+#     print(f"< {name}")
 
-    await websocket.send(greeting)
-    print(f"> {greeting}")
+#     greeting = f"Hello {name}!"
 
-start_server = websockets.serve(hello, 'localhost', 8765)
+#     await websocket.send(greeting)
+#     print(f"> {greeting}")
 
-asyncio.get_event_loop().run_until_complete(start_server)
-asyncio.get_event_loop().run_forever()
+# start_server = websockets.serve(hello, 'localhost', 8080)
+
+# asyncio.get_event_loop().run_until_complete(start_server)
+# asyncio.get_event_loop().run_forever()

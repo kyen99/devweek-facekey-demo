@@ -1,6 +1,6 @@
 // Configure these stuff
 const server = 'ws://localhost'
-const port = 8765
+const port = 8080
 
 // Open websocket connection
 const ws = new WebSocket(`${server}:${port}`)
@@ -54,7 +54,7 @@ function receiveMessage(e) {
 // Send websocket message
 function sendMessage(m) {
   const message = JSON.stringify(m)
-  console.log('Sending... ' + message)
+  console.log('Sending...' + message)
   ws.send(message)
 }
 
