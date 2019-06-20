@@ -1,6 +1,6 @@
 // Configure these stuff
-const server = 'ws://echo.websocket.org'
-const port = 80
+const server = 'ws://localhost'
+const port = 8765
 
 // Open websocket connection
 const ws = new WebSocket(`${server}:${port}`)
